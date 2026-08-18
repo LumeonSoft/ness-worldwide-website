@@ -1,0 +1,205 @@
+.services {
+    min-height: calc(100vh - 82px);
+    background: #050505;
+    color: #ffffff;
+}
+
+/* HERO */
+
+.services-hero {
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 100px 70px 90px;
+    border-bottom: 1px solid #242424;
+}
+
+.services-label,
+.expertise-heading span,
+.services-cta span {
+    color: #777777;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.services-hero h1 {
+    max-width: 900px;
+    margin: 22px 0 32px;
+    font-size: clamp(48px, 6vw, 80px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.services-hero p {
+    max-width: 700px;
+    margin: 0;
+    padding-left: 28px;
+    border-left: 1px solid #ffffff;
+    color: #b7b7b7;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* EXPERTISE */
+
+.expertise {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 110px 70px;
+}
+
+.expertise-heading {
+    margin-bottom: 45px;
+}
+
+.expertise-heading h2 {
+    margin: 12px 0 0;
+    font-size: clamp(38px, 5vw, 48px);
+    font-weight: 500;
+}
+
+/* SERVICE CARDS */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    position: relative;
+    min-height: 260px;
+    padding: 38px;
+    border: 1px solid #242424;
+    background: #0a0a0a;
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: #555555;
+    background: #101010;
+    transform: translateY(-4px);
+}
+
+.service-number {
+    display: block;
+    margin-bottom: 55px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.service-card h3 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.service-card p {
+    max-width: 470px;
+    margin: 0;
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* CTA */
+
+.services-cta {
+    max-width: 1260px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0 auto 120px;
+    padding: 55px;
+    border: 1px solid #242424;
+    background: #0a0a0a;
+}
+
+.services-cta h2 {
+    max-width: 650px;
+    margin: 15px 0 0;
+    font-size: clamp(32px, 4vw, 50px);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.services-cta a {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 16px 26px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.services-cta a:hover {
+    background: #ffffff;
+    color: #050505;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .services-hero {
+        min-height: 480px;
+        padding: 80px 30px 60px;
+    }
+
+    .services-hero h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .services-hero p {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .expertise {
+        padding: 75px 30px;
+    }
+
+    .services-grid {
+        gap: 16px;
+    }
+
+    .service-card {
+        min-height: 230px;
+        padding: 30px;
+    }
+
+    .service-number {
+        margin-bottom: 40px;
+    }
+
+    .services-cta {
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 30px 80px;
+        padding: 35px 30px;
+    }
+}
