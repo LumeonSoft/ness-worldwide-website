@@ -1,13 +1,146 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ness-worldwide-website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ness Worldwide provides strategic, technological and industry-focused solutions for organisations worldwide." />
+  <title>Ness Worldwide — Your Global Solution Partner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ness Worldwide home">
+      <img src="assets/ness.jpg" alt="Ness Worldwide" />
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#products">Products</a>
+      <a class="nav-cta" href="#contact">Contact us <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow light"><span></span>NESS WORLDWIDE</p>
+        <h1>Your global<br><em>solution partner.</em></h1>
+        <a class="hero-copy hero-contact-link" href="#contact">Managing projects. Planning growth.<br>Building stronger businesses.</a>
+        <a class="button button-light" href="#contact">Contact us <span>↗</span></a>
+      </div>
+      <div class="hero-foot">
+        <p>Strategy · Technology · Execution</p>
+        <a href="#contact">Contact us <b>↗</b></a>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-label reveal"><span>01</span><p>ABOUT NESS</p></div>
+      <div class="intro-grid">
+        <h2 class="reveal">Strategic thinking.<br><span>Reliable execution.</span></h2>
+        <div class="intro-copy reveal">
+          <p class="lead">We help organisations turn ambitious ideas into structured, sustainable and successful business outcomes.</p>
+          <p>Ness Worldwide Services Limited is a reputable company that has been providing comprehensive project management services, with a focus on finance and investment management and planning, since 2013. Our experienced team is dedicated to helping clients achieve their business goals through efficient project execution and strategic financial planning. With a commitment to excellence and customer satisfaction, Ness Worldwide Services Limited is a trusted partner for businesses seeking professional project management solutions.</p>
+          <a class="text-link" href="#values">How we work <span>↗</span></a>
+        </div>
+      </div>
+      <div class="stats reveal">
+        <article><strong>2013</strong><p>Founded</p></article>
+        <article><strong>10+</strong><p>Years of experience</p></article>
+        <article><strong>Global</strong><p>Business perspective</p></article>
+      </div>
+    </section>
+
+    <section class="services section dark" id="services-section">
+      <div class="service-image reveal"><img src="assets/services.png" alt="Ness Worldwide business consulting" /></div>
+      <div class="section-label light reveal"><span>02</span><p>WHAT WE DO</p></div>
+      <div class="services-head reveal" id="services"><h2>Business consulting<br><span>and services.</span></h2><p>Strategic, technological and industry-focused solutions that help businesses grow and move forward.</p></div>
+      <div class="service-list">
+        <article class="reveal"><span>01</span><h3>Aviation</h3><p>Professional solutions for the aviation industry.</p></article>
+        <article class="reveal"><span>02</span><h3>Software</h3><p>Software solutions tailored to business needs.</p></article>
+        <article class="reveal"><span>03</span><h3>Security</h3><p>Solutions designed to protect systems and operations.</p></article>
+        <article class="reveal"><span>04</span><h3>Consultation</h3><p>Professional guidance supporting business growth.</p></article>
+        <article class="reveal"><span>05</span><h3>Data</h3><p>Data solutions supporting informed business decisions.</p></article>
+        <article class="reveal"><span>06</span><h3>Infrastructure</h3><p>Reliable infrastructure solutions for organisations.</p></article>
+        <article class="reveal"><span>07</span><h3>E-Learning</h3><p>Digital learning solutions for modern organisations.</p></article>
+        <article class="reveal"><span>08</span><h3>Mobile Learning</h3><p>Accessible learning solutions for mobile platforms.</p></article>
+        <article class="reveal"><span>09</span><h3>Development</h3><p>Development services designed for evolving business needs.</p></article>
+      </div>
+    </section>
+
+    <section class="values section" id="values">
+      <div class="section-label reveal"><span>03</span><p>HOW WE WORK</p></div>
+      <div class="values-title reveal"><h2>Built on strategy,<br><span>trust and execution.</span></h2></div>
+      <div class="value-grid">
+        <article class="reveal"><b>01</b><h3>Strategic Approach</h3><p>We develop practical strategies aligned with each client’s goals, operations and long-term vision.</p></article>
+        <article class="reveal"><b>02</b><h3>Reliable Delivery</h3><p>Our experienced team manages every stage with clarity, responsibility and attention to detail.</p></article>
+        <article class="reveal"><b>03</b><h3>Long-Term Partnership</h3><p>We build lasting relationships by delivering consistent value and dependable support.</p></article>
+      </div>
+    </section>
+
+    <section class="product section" id="products">
+      <div class="section-label light reveal"><span>04</span><p>OUR PRODUCT</p></div>
+      <div class="product-layout">
+        <div class="product-copy reveal"><p class="product-tag">AI-ASSISTED SECURITY TRAINING</p><h2>ARKARIX</h2><h3>Smarter Training<br>for Safer Screening</h3><p>An integrated platform for training, assessing and certifying X-ray security screening operators through simulation, TIP technology and AI-assisted performance analysis.</p><button class="button button-light product-details-trigger" type="button" aria-haspopup="dialog">Request product details <span>↗</span></button></div>
+        <div class="product-visual reveal"><img src="assets/arkarix.png" alt="ARKARIX security training platform" /></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-label reveal"><span>05</span><p>CONTACT</p></div>
+      <div class="contact-title reveal"><h2>Let’s build something<br><span>valuable together.</span></h2><a class="round-link" href="#home" aria-label="Back to top">↑</a></div>
+      <div class="contact-grid reveal">
+        <article><p>CALL US</p><a href="tel:+447778590668">+44 7778 590668</a></article>
+        <article><p>EMAIL US</p><span class="contact-email">info@nessworldwide.co.uk</span></article>
+        <article><p>HEADQUARTERS</p><address>167 Great Portland Street<br>West End, England, GB</address></article>
+        <article><p>DUBAI BRANCH</p><address>Empire Heights No:901<br>Business Bay, Dubai, AE</address></article>
+      </div>
+    </section>
+  </main>
+
+  <div class="product-modal" aria-hidden="true">
+    <div class="product-modal-backdrop" data-close-modal></div>
+    <section class="product-modal-panel" role="dialog" aria-modal="true" aria-labelledby="arkarix-modal-title" tabindex="-1">
+      <header class="product-modal-header">
+        <div>
+          <p>NESS WORLDWIDE · PRODUCT DETAILS</p>
+          <h2 id="arkarix-modal-title">ARKARIX</h2>
+        </div>
+        <button class="product-modal-close" type="button" aria-label="Close product details" data-close-modal>×</button>
+      </header>
+      <div class="product-modal-body">
+        <p class="modal-lead">X-Ray-Based Intelligent Threat Recognition and Operator Training System</p>
+        <div class="modal-tags" aria-label="ARKARIX primary capabilities">
+          <span>National-standard training</span>
+          <span>AI-assisted analysis</span>
+          <span>NXCT-compliant certification</span>
+        </div>
+        <article>
+          <span>01</span>
+          <div><h3>About the Platform</h3><p>Arkarix is an integrated platform that enables X-ray security screening operators to receive training in accordance with national standards, have their performance measured through AI-assisted analysis and obtain NXCT-compliant certification. The platform was developed for presentation and demonstration to public institutions operating in areas such as Aviation Security, Customs Screening, Corrections and Critical Infrastructure.</p></div>
+        </article>
+        <article>
+          <span>02</span>
+          <div><h3>Technical Scope</h3><p>The System provides end-to-end support for screening personnel working at institutions and facilities that use X-ray security equipment. It covers candidate selection, simulation-based training, the assessment and certification of image-recognition proficiency through the Threat Image Projection (TIP) method, and continuous development through AI-assisted performance analysis.</p></div>
+        </article>
+        <article>
+          <span>03</span>
+          <div><h3>Adaptable Architecture</h3><p>Covering design, development, testing, security validation, deployment, training, maintenance and support, the System is not limited to a single type of institution. Its flexible architecture is designed to adapt to a wide range of X-ray screening environments.</p></div>
+        </article>
+      </div>
+      <footer class="product-modal-footer"><p>For demo and institutional presentation requests</p><a href="#contact" data-modal-contact>Contact Ness Worldwide <span>↗</span></a></footer>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-top"><img src="assets/ness.jpg" alt="Ness Worldwide" /><p>Your Global Solution Partner</p></div>
+    <div class="footer-bottom"><p>© 2026 Ness Worldwide Services Limited</p><div><a href="#about">About</a><a href="#services">Services</a><a href="#products">Products</a><a href="#contact">Contact</a></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
